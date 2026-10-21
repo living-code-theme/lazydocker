@@ -1,0 +1,12 @@
+# Merge gui.theme into the existing lazydocker config; preserve other options.
+gui:
+  theme:
+    activeBorderColor:
+      - "#187d6e"
+      - bold
+    inactiveBorderColor:
+      - "#50565a"
+    selectedLineBgColor:
+      - "#c2ccd3"
+    optionsTextColor:
+      - "#1f7074"

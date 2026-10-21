@@ -1,0 +1,28 @@
+{
+  "$schema": "https://living-code.dev/port.schema.json",
+  "schemaVersion": 1,
+  "name": "Lazydocker",
+  "slug": "lazydocker",
+  "group": "CLI & TUI",
+  "emoji": "🐳",
+  "description": "Living Code for Lazydocker: native YAML overrides for active/inactive borders, selected rows and option text in four flavors.",
+  "homepage": "https://github.com/jesseduffield/lazydocker",
+  "quick": "Install the native theme files",
+  "aliases": [
+    "lazy docker",
+    "docker tui"
+  ],
+  "flavors": [
+    "night",
+    "frost",
+    "paper",
+    "signal"
+  ],
+  "files": [
+    "themes/living-code-night.yml",
+    "themes/living-code-frost.yml",
+    "themes/living-code-paper.yml",
+    "themes/living-code-signal.yml"
+  ],
+  "images": []
+}

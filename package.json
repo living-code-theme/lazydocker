@@ -1,0 +1,32 @@
+{
+  "name": "living-code-lazydocker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Living Code for Lazydocker: native YAML overrides for active/inactive borders, selected rows and option text in four flavors.",
+  "license": "MIT",
+  "author": "Living Code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/living-code-theme/lazydocker.git"
+  },
+  "homepage": "https://living-code.dev/ports/lazydocker/",
+  "packageManager": "pnpm@12.9.0",
+  "engines": {
+    "node": ">=22.22"
+  },
+  "livingCode": {
+    "kind": "files"
+  },
+  "scripts": {
+    "build": "node scripts/generate.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs && node --test test/*.test.mjs",
+    "check:generated": "node scripts/generate.mjs --check",
+    "palette:update": "node scripts/update-palette.mjs",
+    "package": "node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "yaml": "2.8.1"
+  }
+}

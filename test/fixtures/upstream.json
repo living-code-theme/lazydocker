@@ -1,0 +1,17 @@
+{
+  "repository": "jesseduffield/lazydocker",
+  "revision": "7e7aadc2071d58031bf2daafca1fbd4093efc23f",
+  "paths": [
+    "pkg/config/app_config.go",
+    "docs/Config.md",
+    "pkg/gui/gocui.go"
+  ],
+  "checked": "2026-10-21",
+  "contract": "yaml",
+  "colors": [
+    "activeBorderColor",
+    "inactiveBorderColor",
+    "selectedLineBgColor",
+    "optionsTextColor"
+  ]
+}
