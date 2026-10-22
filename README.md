@@ -7,18 +7,41 @@
 
 ## Previews
 
-Real application screenshots have not been captured yet.
+<table data-lc-flavors>
+<tr>
+<td width="50%" valign="top">
+<strong>Night</strong><br><sub>Dark · full palette</sub><br><br>
+<a href="images/night.png"><img src="images/night.png" alt="Lazydocker running Living Code Night" width="640"></a>
+</td>
+<td width="50%" valign="top">
+<strong>Frost</strong><br><sub>Dark · softer chroma</sub><br><br>
+<a href="images/frost.png"><img src="images/frost.png" alt="Lazydocker running Living Code Frost" width="640"></a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<strong>Paper</strong><br><sub>Light · near-white slate</sub><br><br>
+<a href="images/paper.png"><img src="images/paper.png" alt="Lazydocker running Living Code Paper" width="640"></a>
+</td>
+<td width="50%" valign="top">
+<strong>Signal</strong><br><sub>Dark · teal accent</sub><br><br>
+<a href="images/signal.png"><img src="images/signal.png" alt="Lazydocker running Living Code Signal" width="640"></a>
+</td>
+</tr>
+</table>
+
+Select any preview to view the image at full size.
 
 ## Installation
 
 ```sh
-git clone https://github.com/living-code-theme/lazydocker.git
-cd lazydocker
+flavor=night # night, frost, paper, or signal
+curl -fsSL --create-dirs -o "${CONFIG_DIR:-${XDG_CONFIG_HOME:-$HOME/.config}/lazydocker}/themes/living-code-$flavor.yml" "https://raw.githubusercontent.com/living-code-theme/lazydocker/main/themes/living-code-$flavor.yml"
 ```
 
-Open your Lazydocker config using the project panel’s **o** action. Merge `gui.theme` from the selected file in `themes/`, replacing existing theme keys while preserving all Docker commands and other settings.
+Open the active Lazydocker config with the project panel’s **o** action. Merge `gui.theme` from the downloaded fragment, replacing only existing theme keys. **Do not overwrite the whole config**: preserve Docker commands and other settings. Restart Lazydocker.
 
-Default locations: Linux `~/.config/lazydocker/config.yml`; macOS `~/Library/Application Support/jesseduffield/lazydocker/config.yml`; Windows `%APPDATA%\lazydocker\config.yml`. Restart Lazydocker after saving.
+The command above uses Linux’s default config location and respects `CONFIG_DIR`. On macOS, use `~/Library/Application Support/jesseduffield/lazydocker/themes`; on Windows, use `%APPDATA%\lazydocker\themes`. Lazydocker has no separate theme-file import, so the merge is required.
 
 ## Flavors
 
@@ -27,36 +50,36 @@ Expand a flavor for its full-size preview and activation instructions.
 <details data-lc-flavor="night">
 <summary><strong>Night</strong> · Dark · full palette</summary>
 
-A real application capture is not available yet.
+<p><a href="images/night.png"><img src="images/night.png" alt="Lazydocker running Living Code Night" width="1280"></a></p>
 
-Merge `gui.theme` from `themes/living-code-night.yml` into your config and restart Lazydocker.
+Merge `gui.theme` from the downloaded `living-code-night.yml` into the active Lazydocker config and restart.
 
 </details>
 
 <details data-lc-flavor="frost">
 <summary><strong>Frost</strong> · Dark · softer chroma</summary>
 
-A real application capture is not available yet.
+<p><a href="images/frost.png"><img src="images/frost.png" alt="Lazydocker running Living Code Frost" width="1280"></a></p>
 
-Merge `gui.theme` from `themes/living-code-frost.yml` into your config and restart Lazydocker.
+Merge `gui.theme` from the downloaded `living-code-frost.yml` into the active Lazydocker config and restart.
 
 </details>
 
 <details data-lc-flavor="paper">
 <summary><strong>Paper</strong> · Light · near-white slate</summary>
 
-A real application capture is not available yet.
+<p><a href="images/paper.png"><img src="images/paper.png" alt="Lazydocker running Living Code Paper" width="1280"></a></p>
 
-Merge `gui.theme` from `themes/living-code-paper.yml` into your config and restart Lazydocker.
+Merge `gui.theme` from the downloaded `living-code-paper.yml` into the active Lazydocker config and restart.
 
 </details>
 
 <details data-lc-flavor="signal">
 <summary><strong>Signal</strong> · Dark · teal accent</summary>
 
-A real application capture is not available yet.
+<p><a href="images/signal.png"><img src="images/signal.png" alt="Lazydocker running Living Code Signal" width="1280"></a></p>
 
-Merge `gui.theme` from `themes/living-code-signal.yml` into your config and restart Lazydocker.
+Merge `gui.theme` from the downloaded `living-code-signal.yml` into the active Lazydocker config and restart.
 
 </details>
 
@@ -67,6 +90,8 @@ Only the four exposed theme attributes are changed: `activeBorderColor`, `inacti
 ## Compatibility
 
 For Lazydocker’s `gui.theme` attribute API with hex-color support. This is intentionally a partial UI theme: terminal foreground/background, container health labels and other hard-coded colors are not individually configurable by this API. Use a matching Living Code terminal palette. Tests validate native YAML and the exact field contract; no Docker daemon is needed for maintenance.
+
+Previews are captured programmatically from the actual application in an isolated profile. See [`capture/app.py`](capture/app.py) for the app-owned recipe and [`images/capture.json`](images/capture.json) for runtime, palette and image provenance. No mock interface is drawn.
 
 ## Contributing
 

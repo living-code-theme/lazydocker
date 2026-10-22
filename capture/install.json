@@ -1,0 +1,8 @@
+{
+  "downloads": [
+    {
+      "source": "themes/living-code-{flavor}.yml",
+      "destination": "{docker}/themes/living-code-{flavor}.yml"
+    }
+  ]
+}

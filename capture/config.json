@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "scene": "Lazydocker native UI connected to a local Docker API fixture, never a user Docker daemon.",
+  "versionCommand": [
+    "lazydocker",
+    "--version"
+  ],
+  "fixtures": []
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "scene": "Lazydocker native UI connected to a local Docker API fixture, never a user Docker daemon.",
+  "inputs": {
+    "capture/app.py": "1653d367144d62b2eb4296e0fff68d18e8c12fe316d8a94c8ed454f1d8431ec8",
+    "capture/config.json": "b8101528219d6666fd4d6f832bf11c04d60dbf8afc57e2bb7c87bbfab3a5c631",
+    "capture/flake.lock": "e3750f7ba25d0b1971722cdd83b2f07e32528980a4d6a9a1ea55177747de5752",
+    "capture/flake.nix": "55df3eb38fb9674257608c54877bf9b74cb4dbb05f0e85456787f857e4fa2937",
+    "palette/theme.json": "d735cf005e3b2807953226c0119e384f6f8a3d2b3167443371cb302a8c689cdb",
+    "port.json": "57a6c8c03207aadace3a061c38e200e5501c25ed28a8cced09f931f6a1b182fa",
+    "scripts/capture.py": "6830da447e48a4ab5511012b5222763677214e8a98683b94c60248765202ca9f",
+    "themes/living-code-frost.yml": "5a39a376682b82c604b19e7817a1e60ac0b06d3c2725499b71f64b1ba250b572",
+    "themes/living-code-night.yml": "e5b3fed7ac36f0816c6dc014c9f3e1a40a050659ddacbd37b8912d64b7842ee5",
+    "themes/living-code-paper.yml": "5e4b87cc78fa74dffbf78e05b55bd0ff5f7138de056a8e9eb05732b686d8358e",
+    "themes/living-code-signal.yml": "af64a45a9d55eaad3ddad394ef309de0cc41e74d1fde4969551a429d70b4d690"
+  },
+  "images": {
+    "night": {
+      "path": "images/night.png",
+      "sha256": "33269eff2d1731afc40a2cc91bdd20b35943b0e1ad05044fc13e6748b1935a74",
+      "application": "Version: 0.25.2",
+      "paletteColors": [
+        "#00a692",
+        "#05080b",
+        "#2d3438",
+        "#8acb83",
+        "#9ae0dd",
+        "#9ba0a2",
+        "#bf91cd",
+        "#e2e9ee"
+      ]
+    },
+    "frost": {
+      "path": "images/frost.png",
+      "sha256": "dc82ebf4b6edf9930d1307f3f7847ce682863a8b421760744202f874e4fc55cd",
+      "application": "Version: 0.25.2",
+      "paletteColors": [
+        "#0a1016",
+        "#333c43",
+        "#43a997",
+        "#9ba0a2",
+        "#a2cb9d",
+        "#b6e2df",
+        "#bc9ec6",
+        "#c8cfd4",
+        "#e2e9ee"
+      ]
+    },
+    "paper": {
+      "path": "images/paper.png",
+      "sha256": "cac7385c871d380739eb57127ee580f96976917afc569ad3a1e69a52d423eca3",
+      "application": "Version: 0.25.2",
+      "paletteColors": [
+        "#12171a",
+        "#187d6e",
+        "#1f7074",
+        "#3b7a35",
+        "#50565a",
+        "#81558e",
+        "#c2ccd3",
+        "#ebeff2",
+        "#f4f7f9"
+      ]
+    },
+    "signal": {
+      "path": "images/signal.png",
+      "sha256": "e63ac2ee11b844f76dd6492b976c10d32e33126adcae88ac3f006e4ea473fde9",
+      "application": "Version: 0.25.2",
+      "paletteColors": [
+        "#00a692",
+        "#05080b",
+        "#2d3438",
+        "#9ba0a2",
+        "#c8cfd4",
+        "#e2e9ee"
+      ]
+    }
+  }
+}
