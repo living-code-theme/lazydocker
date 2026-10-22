@@ -5,10 +5,10 @@
     "capture/app.py": "1653d367144d62b2eb4296e0fff68d18e8c12fe316d8a94c8ed454f1d8431ec8",
     "capture/config.json": "b8101528219d6666fd4d6f832bf11c04d60dbf8afc57e2bb7c87bbfab3a5c631",
     "capture/flake.lock": "e3750f7ba25d0b1971722cdd83b2f07e32528980a4d6a9a1ea55177747de5752",
-    "capture/flake.nix": "55df3eb38fb9674257608c54877bf9b74cb4dbb05f0e85456787f857e4fa2937",
+    "capture/flake.nix": "3156113e4e06760f4e7882d96a055e2ad6929cc818b80df16e147dab349da285",
     "palette/theme.json": "d735cf005e3b2807953226c0119e384f6f8a3d2b3167443371cb302a8c689cdb",
     "port.json": "57a6c8c03207aadace3a061c38e200e5501c25ed28a8cced09f931f6a1b182fa",
-    "scripts/capture.py": "6830da447e48a4ab5511012b5222763677214e8a98683b94c60248765202ca9f",
+    "scripts/capture.py": "dcb8dc5d8a6ecbf2eb998eab90d678c745c9de6e9d35ded82edc0a949cb7e4e8",
     "themes/living-code-frost.yml": "5a39a376682b82c604b19e7817a1e60ac0b06d3c2725499b71f64b1ba250b572",
     "themes/living-code-night.yml": "e5b3fed7ac36f0816c6dc014c9f3e1a40a050659ddacbd37b8912d64b7842ee5",
     "themes/living-code-paper.yml": "5e4b87cc78fa74dffbf78e05b55bd0ff5f7138de056a8e9eb05732b686d8358e",
@@ -17,7 +17,7 @@
   "images": {
     "night": {
       "path": "images/night.png",
-      "sha256": "33269eff2d1731afc40a2cc91bdd20b35943b0e1ad05044fc13e6748b1935a74",
+      "sha256": "03b1b0d7dda6a34eae9a86b2009128ab99eac0bf0b85d77f5f0cef66def9bba8",
       "application": "Version: 0.25.2",
       "paletteColors": [
         "#00a692",
@@ -32,7 +32,7 @@
     },
     "frost": {
       "path": "images/frost.png",
-      "sha256": "dc82ebf4b6edf9930d1307f3f7847ce682863a8b421760744202f874e4fc55cd",
+      "sha256": "bec54bc1aae4ea23e3daf5b2978122efea9b6fdda18e4be07454fc658c67ff87",
       "application": "Version: 0.25.2",
       "paletteColors": [
         "#0a1016",
@@ -48,7 +48,7 @@
     },
     "paper": {
       "path": "images/paper.png",
-      "sha256": "cac7385c871d380739eb57127ee580f96976917afc569ad3a1e69a52d423eca3",
+      "sha256": "0a7614bd5e5e482570eeb3c9b3bc9dfda706aaaebfb1d1986a9c63bce34c7d09",
       "application": "Version: 0.25.2",
       "paletteColors": [
         "#12171a",
@@ -58,13 +58,12 @@
         "#50565a",
         "#81558e",
         "#c2ccd3",
-        "#ebeff2",
         "#f4f7f9"
       ]
     },
     "signal": {
       "path": "images/signal.png",
-      "sha256": "e63ac2ee11b844f76dd6492b976c10d32e33126adcae88ac3f006e4ea473fde9",
+      "sha256": "cfff1908ac5169631262e6d5756b7c3dfc948ee28175bf0aceaa4ad30f8d5256",
       "application": "Version: 0.25.2",
       "paletteColors": [
         "#00a692",
